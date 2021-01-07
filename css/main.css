@@ -1,0 +1,251 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: #201b2d;
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+head, body{
+	width: 100%;
+	height: 100%;
+}
+
+div, input, button, a, ul, li, p, form, span{
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}
+
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.header	{
+	background: rgba(77,189,254,1);
+	background: -moz-linear-gradient(-45deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(77,189,254,1)), color-stop(100%, rgba(55,144,217,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	background: linear-gradient(135deg, rgba(77,189,254,1) 0%, rgba(55,144,217,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dbdfe', endColorstr='#3790d9', GradientType=1 );
+	color: #fff;
+	padding: 35px 0;
+}
+
+
+.title{
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 700;
+	font-size: 36px;
+	width: 557px;
+}
+.spn{
+	font-size: 56px;
+}
+
+.wrapper{
+	display: flex;
+	margin-top: -30px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.intro{
+	color: #fff;
+	width: 400px;
+	margin-top: 32px;
+	margin-bottom: 56px;
+}
+
+.btn{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	background-color: #ffd429;
+	color: #2e2a1b;
+	padding: 22px 28px;
+	display: block;
+	width: 220px;	
+	transition: all 0.5s ease;
+	transition: 5s;
+}
+
+.btn:hover{
+	background-color: #fbc904;
+}
+
+.head_img{
+	width: 620px;	
+}
+
+.learn{
+	padding-top: 112px;
+	padding-bottom: 120px;
+}
+
+.section-title{
+	font-size: 30px;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 0.02em;
+}
+
+.times{
+	display: flex;
+	justify-content: space-between;
+}	
+
+.time{
+	width: 300px;
+	text-align: center;
+	background: url('../img/icon-1.png') no-repeat top;
+	padding-top: 34px;
+	margin-top: 78px;
+}
+
+.time-title{
+	font-size: 19px;
+	font-family: "Ubuntu", sans-serif;
+	margin-top: 78px;
+}
+
+.time-text{
+	margin-top: 15px;
+}
+
+.time-traveling{
+	background: url('../img/icon-2.png') no-repeat top;
+}
+
+.time-launch{
+	background: url('../img/icon-3.png') no-repeat top;
+}
+
+.mail{
+	background-color: #ecf3f8;
+	padding-top: 105px;
+	padding-bottom: 100px;
+}
+
+.form{
+	width: 350px;
+	margin: 0 auto 15px;
+	display: block;
+	margin-top: 63px;
+}
+
+.input{
+	width: 340px;
+	height: 46px;
+	border: 1px solid #bbbbbb;
+	font-size: 15px;
+	font-family: "Ubuntu", sans-serif;
+	padding-left: 25px;
+	margin-bottom: 15px;
+}
+
+.btn-form {
+	width: 340px;
+	border: none;
+
+}
+
+.footer{
+	padding: 32px 0;
+	background-color: #164d7a;
+}
+
+.credits{
+	font-size: 14px;
+	color: #fff;
+	margin: 0;
+	text-align: center;
+}
+
+.red{
+	color: red;
+}
+
+/*Responsive*/
+
+
+/* 992px - 1200px */
+ 
+ @media screen and (max-width: 1200px) {
+ 	.container{
+ 		width: 960px;
+ 	}
+ 	.wrapper{
+ 		flex-direction: column;
+ 		margin-top: 150px;
+ 	}
+ }
+
+/* 768px - 992px */
+
+ @media screen and (max-width: 992px) {
+ 	.container{
+ 		width: 720px;
+ 	}
+ 	.times{
+ 		flex-direction: column;
+ 		align-items: center;
+ 	}
+ }
+
+/* 576px - 768px */
+
+ @media screen and (max-width: 768px) {
+ 	.container{
+ 		width: 540px;
+ 	}
+  	.head_img{
+ 		width: 90%;
+ 	}
+ 	.title{
+ 		text-align: center;
+ 	}
+ 	.intro{
+ 		text-align: center;
+ 		margin: 32px auto 0;
+ 		margin-bottom: 56px;
+ 	}
+ 	.head-btn{
+ 		margin: 0 auto;
+ 	}
+ }
+
+/* 0 - 576px */
+
+ @media screen and (max-width: 576px) {
+ 	.container{
+ 		width: 90%;
+ 	}
+ 	.head_img{
+ 		width: 80%;
+ 	}
+ 	.title{
+ 		width: 100%;
+ 	}
+ 	.intro{
+ 		width: 70%;
+ 	}
+ 	.time{
+ 		width: 100%;
+ 	}
+ 	.form{
+ 		width: 100%;
+ 	}
+ 	.input{
+ 		width: 100%;
+ 	}
+ 	.btn-form{
+ 		width: 100%;
+ 	}
+ }
